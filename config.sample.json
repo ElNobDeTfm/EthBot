@@ -1,0 +1,6 @@
+{
+  "user":"usuario bot",
+  "password":"contraseña",
+  "wiki": "prefijo interwiki",
+  "youtube-key":"clave de youtube aqui, opcional, necesaria solo para obtener info de youtube"
+}
