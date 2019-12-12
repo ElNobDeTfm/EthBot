@@ -1,6 +1,6 @@
 {
   "user":"usuario bot",
   "password":"contraseña",
-  "wiki": "prefijo interwiki",
+  "wiki": "link del wiki (ej. https://steven-universe.fandom.com/es/)",
   "youtube-key":"clave de youtube aqui, opcional, necesaria solo para obtener info de youtube"
 }

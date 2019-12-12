@@ -7,6 +7,7 @@ class Event(object):
 
     def parse(self, connection):
         returned = {}
+
         if connection["event"] == "join":
             connection["data"] = json.loads(connection["data"])
 

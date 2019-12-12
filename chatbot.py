@@ -152,7 +152,7 @@ class Client(object):
     def __set_sid(self, settings):
         response = self.get()
 
-        content = json.loads(response.content[5:])
+        content = json.loads(response.content[4:])
 
         self.request_data['sid'] = content['sid']
         return
@@ -254,6 +254,11 @@ class ChatBot(object):
                 print "Error de sesion. Reiniciando bot..."
                 self.c.restart()
             else:
+                event_re = re.search("(\[\"message\"(.*))", content)
+                result = event_re.group(1)
+                evt_json = json.loads(result)
+                content = evt_json[1]
+
                 e = Event(content)
                 if content["event"] == "join":
                     self.on_join(self.c, e)

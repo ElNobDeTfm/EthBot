@@ -20,7 +20,7 @@ except:
     print "Error while reading the config file. Exiting..."
     sys.exit(1)
 
-wiki_name = 'http://' + config_file['wiki'] + '.wikia.com/'
+wiki_name = config_file['wiki']
 wikibot.site(wiki_name)
 
 initial_time = time.time()
